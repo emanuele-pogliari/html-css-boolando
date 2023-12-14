@@ -107,6 +107,7 @@ main {
     background-color: red;
     display: inline-block;
     font-size: 0.9em;
+    margin-right: 5px;
 }
 
 .discount p {
@@ -119,7 +120,7 @@ main {
     background-color: green;
     display: inline-block;
     font-size: 0.9em;
-    margin-left: 5px;
+
 }
 
 .tags,
@@ -133,7 +134,7 @@ article h3 small {
 }
 
 footer {
-    background-color: black;
+    background-color: #1A1A1A;
     color: white;
     padding-bottom: 35px;
     padding-top: 35px;
@@ -162,8 +163,6 @@ footer #footer-container .second-line ul {
     padding-bottom: 20px;
 }
 
-
-
 #main-container article div .img {
     position: relative;
 }
@@ -189,4 +188,13 @@ span {
     text-decoration: line-through;
     color: black;
     margin: 5px;
+}
+
+.social-links {
+    font-size: 1.2em;
+    margin-top: 12px;
+}
+
+.social-links .fa-brands {
+    margin-left: 3px;
 }
