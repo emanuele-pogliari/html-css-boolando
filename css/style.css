@@ -1,0 +1,29 @@
+/* regole di reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: #FF6900;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#nav-container div {
+    border: 2px solid black;
+}
