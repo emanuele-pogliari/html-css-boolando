@@ -15,22 +15,43 @@ nav {
     width: 100%;
     top: 0;
     z-index: 99;
-    /* da rivedere */
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
 
-#nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
+i {
+    color: white;
+    font-size: 1.1em;
 }
 
-#nav-container div {
-    border: 2px solid black;
+#nav-container {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#genders,
+#user-preferences {
+    display: flex;
+    gap: 15px;
+}
+
+#nav-container {
+    width: 1400px;
+}
+
+#logo {
+    width: 140px;
+}
+
+#logo img {
+    width: 100%;
 }
 
 main {
@@ -48,12 +69,7 @@ main {
 
 #main-container article {
     width: 450px;
-    background-color: aqua;
     position: relative;
-}
-
-#main-container article:hover {
-    background-color: lightblue;
 }
 
 #main-container article div .img {
@@ -63,32 +79,53 @@ main {
 
 
 .favourite {
-    width: 50px;
-    height: 50px;
-    background-color: red;
+    background-color: white;
     position: absolute;
     right: 0;
     top: 10px;
-
+    width: 50px;
+    font-size: 33px;
+    text-align: center;
 }
+
+.favourite:hover {
+    color: red;
+}
+
 
 .tags {
-    position: absolute;
-    top: 610px;
+    top: 560px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
 }
 
+
 .discount {
-    width: 53px;
-    height: 26px;
+    padding: 8px 10px;
     background-color: red;
     display: inline-block;
+    font-size: 0.9em;
+}
+
+.discount p {
+    padding: 8px 25px;
 }
 
 .sustainability {
-    width: 103px;
-    height: 26px;
-    background-color: pink;
+    position: absolute;
+    padding: 8px 10px;
+    background-color: green;
     display: inline-block;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.tags,
+.favourite {
+    position: absolute;
+    z-index: 85;
 }
 
 article h3 small {
@@ -102,12 +139,13 @@ footer {
     padding-top: 35px;
 }
 
-
-
 footer #footer-container {
     display: flex;
     justify-content: space-around;
+}
 
+.second-line {
+    margin-top: 15px;
 }
 
 footer #footer-container ul {
@@ -122,4 +160,33 @@ footer #footer-container .second-line ul {
 
 .brand {
     padding-bottom: 20px;
+}
+
+
+
+#main-container article div .img {
+    position: relative;
+}
+
+#main-container article div .img-hover {
+    width: 450px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 80;
+}
+
+#main-container article:hover .img-hover {
+    display: inline-block;
+}
+
+span {
+    color: red;
+}
+
+.og-price {
+    text-decoration: line-through;
+    color: black;
+    margin: 5px;
 }
