@@ -5,9 +5,20 @@
     box-sizing: border-box;
 }
 
+/* Stilizzazione font documento */
+
 body {
     font-family: sans-serif;
 }
+
+/* Stilizzazione elementi comuni */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Inizio Stilizzazione nav */
 
 nav {
     background-color: #FF6900;
@@ -15,21 +26,17 @@ nav {
     width: 100%;
     top: 0;
     z-index: 99;
-    box-shadow: 1px 2px 1px;
+    box-shadow: 1px 0px 12px 0px;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
 
-i {
+#nav-container #user-preferences i {
     color: white;
     font-size: 1.1em;
 }
 
 #nav-container {
-    width: 1400px;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -51,8 +58,13 @@ i {
     width: 100%;
 }
 
+/* Fine stilizzazione nav */
+
+
+/* Inizio stilizzazione main */
+
 main {
-    width: 1400px;
+    max-width: 1400px;
     margin: 100px auto 60px;
 }
 
@@ -65,7 +77,7 @@ main {
 }
 
 #main-container article {
-    width: 450px;
+    max-width: 450px;
     position: relative;
 }
 
@@ -73,8 +85,7 @@ main {
     height: 650px;
 }
 
-
-.favourite {
+article .card .favourite {
     background-color: white;
     position: absolute;
     right: 0;
