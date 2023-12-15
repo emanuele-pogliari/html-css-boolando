@@ -122,7 +122,8 @@ main {
 }
 
 article h3 small {
-    font-size: 0.7em;
+    font-size: 0.8em;
+    font-weight: 400;
 }
 
 footer {
